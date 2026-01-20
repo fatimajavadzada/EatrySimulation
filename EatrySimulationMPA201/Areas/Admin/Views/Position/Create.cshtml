@@ -1,0 +1,16 @@
+﻿@model PositionCreateVM
+
+<div class="d-flex w-100 m-4">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="form-text text-danger"></span>
+        </div>
+
+        <div class="d-flex gap-2">
+            <a asp-action="Index" class="btn btn-danger">Cancel</a>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

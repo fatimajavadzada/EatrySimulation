@@ -1,0 +1,35 @@
+﻿@using EatrySimulationMPA201.ViewModels.UserViewModels
+@model LoginVM
+@{
+    Layout = "/Views/Shared/_UserLayout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="container">
+    <div class="row d-flex align-items-center">
+        <form class="mt-5" method="post">
+            <div class="form-group">
+                <label asp-for="EmailAddress">Email Address</label>
+                <input asp-for="EmailAddress" class="form-control">
+                <span asp-validation-for="EmailAddress" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" class="form-text text-danger"></span>
+            </div>
+
+
+            <div class="form-check">
+                <input asp-for="IsRemember" class="form-check-input">
+                <label class="form-check-label" asp-for="IsRemember">Remember me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

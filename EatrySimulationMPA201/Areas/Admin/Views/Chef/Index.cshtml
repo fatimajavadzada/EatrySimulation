@@ -1,0 +1,35 @@
+﻿@model List<ChefGetVM>
+
+<div class="d-flex flex-column w-100 m-4">
+    <a asp-action="Create" class="btn btn-warning">Add new Chef</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Image</th>
+                <th scope="col">Position</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var chef in Model)
+            {
+                <tr>
+                    <th scope="row">@chef.Id</th>
+                    <td>@chef.FullName</td>
+                    <td>@chef.Description</td>
+                    <td>
+                        <img src="/assets/images/@chef.ImagePath" />
+                    </td>
+                    <td>@chef.PositionName</td>
+                    <td>
+                        <a asp-action="Update" asp-route-id="@chef.Id" class="btn btn-primary">Update</a>
+                        <a asp-action="Delete" asp-route-id="@chef.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
