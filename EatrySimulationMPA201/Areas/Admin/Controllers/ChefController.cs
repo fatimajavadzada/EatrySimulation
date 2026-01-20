@@ -42,10 +42,11 @@ public class ChefController(AppDbContext _context, IWebHostEnvironment _environm
             return View(vm);
         }
 
-        var existPosition = _context.Positions.FirstOrDefault(x => x.Id == vm.PositionId);
-        if (existPosition is null)
+        var existPosition = await _context.Positions.AnyAsync(x => x.Id == vm.PositionId);
+        if (existPosition is false)
         {
-            return NotFound();
+            ModelState.AddModelError("PositionId", "Position is not found!");
+            return View(vm);
         }
 
         if (!vm.ImagePath.CheckFileSize(2))
@@ -108,11 +109,12 @@ public class ChefController(AppDbContext _context, IWebHostEnvironment _environm
             return View(vm);
         }
 
-        var existPosition = _context.Positions.FirstOrDefault(x => x.Id == vm.PositionId);
+        var existPosition = await _context.Positions.AnyAsync(x => x.Id == vm.PositionId);
 
-        if (existPosition is null)
+        if (existPosition is false)
         {
-            return NotFound();
+            ModelState.AddModelError("PositionId", "Position is not found!");
+            return View(vm);
         }
 
         var existChef = await _context.Chefs.FindAsync(vm.Id);

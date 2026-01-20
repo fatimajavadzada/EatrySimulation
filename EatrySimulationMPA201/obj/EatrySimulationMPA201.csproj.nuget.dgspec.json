@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\Simulations\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\Simulations\\Eatry\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\Simulations\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\Simulations\\Eatry\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Simulations\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Simulations\\Eatry\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj",
         "projectName": "EatrySimulationMPA201",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Simulations\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\Simulations\\Eatry\\EatrySimulationMPA201\\EatrySimulationMPA201\\EatrySimulationMPA201.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Simulations\\EatrySimulationMPA201\\EatrySimulationMPA201\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\Simulations\\Eatry\\EatrySimulationMPA201\\EatrySimulationMPA201\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

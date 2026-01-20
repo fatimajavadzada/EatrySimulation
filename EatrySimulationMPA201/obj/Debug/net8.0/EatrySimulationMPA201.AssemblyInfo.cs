@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EatrySimulationMPA201")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59385a4c1b70a29c06e3c9d19e3cc3726e6f7542")]
 [assembly: System.Reflection.AssemblyProductAttribute("EatrySimulationMPA201")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EatrySimulationMPA201")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
